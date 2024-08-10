@@ -1,0 +1,10 @@
+[package]
+name = "Matcha-Backend"
+version = "0.1.0"
+edition = "2021"
+authors = ["Amiguez(@Blu-ea)", "Lburnet(@aleyra)"]
+description = "This is our BackEnd for the Matcha project from 42,"
+
+[dependencies]
+nickel = "0.11.0"
+
