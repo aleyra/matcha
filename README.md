@@ -28,9 +28,81 @@ Team project of 2 students : lburnet and amiguez
 ### Useful links
 * Start a new angular/ts project : https://www.ganatan.com/tutorials/demarrer-avec-angular
 * Start a Nickel FrameWork : https://nickel-org.github.io
+* Start a Diesel Project (rust ORM): https://diesel.rs/guides/getting-started.html
 
 ### TODO
-1. mettre en place un docker (compose ?)
+1. mettre en place un docker compose
 2. lancer un projet angular/ts pour le front end
 
+### What should we have 
+ - Login through Email
+ - Match with other peoples
+ - See who have liked the user
+ - See who the user have liked
+ - A metric about `Fame rating` (up to us to define)
+ - See they profile
+ - Chat with them
+ - Customise the user profile - Public information
+   - tags :
+     - custom tags (#geek, #vegan ...)
+   - Special tags:
+     - gender
+     - sexual preferences
+   - biography
+   - profile picture
+   - pictures 
+   - username
+ - Private information:
+   - user email
+   - real names (first and last name)
+ - Get the user GPS position (if not possible Find an other way to get it, maybe Ip adresses)
+   - The user can update it
+   - Can be showed or hidden
+
+
+### Database Structure
+
+<details>
+<summary> User </summary>
+
+- Username
+- Email
+- First name
+- Last name
+- Biography
+- tag List
+- Simped list (Other User that liked the user)
+- Liked list (Other User that the user Liked)
+
+</details>
+
+
+<details>
+<summary> Tags </summary>
+
+- name
+</details>
+
+
+<details>
+<summary> Chat </summary>
+
+ - User 1
+ - User 1
+ - Message List
+</details>
+
+<details>
+<summary> Messages </summary>
+ 
+- Content
+- Sending time
+
+</details>
+
+
+
 ### Notes
+
+1. No chatting allowed if no profile Picture
+

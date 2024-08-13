@@ -1,4 +1,3 @@
-FROM ubuntu:latest
-LABEL authors="bluea"
+FROM postgres:15.3
 
-ENTRYPOINT ["top", "-b"]
+CMD [ "postgres" ]

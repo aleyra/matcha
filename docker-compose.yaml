@@ -1,7 +1,11 @@
 services:
-  Backend:
+  backend:
     build: backend
-  Frontend:
+  frontend:
     build: frontend
-  Database:
+  database:
+    env_file:
+      - ./db/database.env
     build: db
+    ports:
+      - 5432:5432
