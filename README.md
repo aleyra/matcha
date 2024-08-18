@@ -55,9 +55,11 @@ Team project of 2 students : lburnet and amiguez
  - Private information:
    - user email
    - real names (first and last name)
- - Get the user GPS position (if not possible Find an other way to get it, maybe Ip adresses)
+ - Get the user GPS position (if not refused, use the Ip address)
    - The user can update it
    - Can be showed or hidden
+   - The user cannot see other people location by IP address
+   - As an admin, you can see all user location, GPS or not
 
 
 ### Database Structure
