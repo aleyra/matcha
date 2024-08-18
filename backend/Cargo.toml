@@ -1,10 +1,16 @@
 [package]
-name = "Matcha-Backend"
+name = "matcha_app"
 version = "0.1.0"
 edition = "2021"
 authors = ["Amiguez(@Blu-ea)", "Lburnet(@aleyra)"]
 description = "This is our BackEnd for the Matcha project from 42,"
 
+[lib]
+name = "matcha_lib"
+path = "src/lib.rs"
+
 [dependencies]
-diesel = "2.2.2"
+diesel = { version = "2.2.2", features = ["postgres"]}
+diesel_cli = { version = "2.2.1", features = ["postgres"], default-features = false}
+dotenv = "0.15.0"
 nickel = "0.11.0"
